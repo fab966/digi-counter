@@ -99,7 +99,7 @@ This project is released under the [GNU GPL v2 or later](https://www.gnu.org/lic
 
 ## 💙 Credits
 
-Developed & maintained by <a href="https://digitest.net" target="_blank" rel="noopener noreferrer">Digitest.net</a>. 
+Developed & maintained by [Digitest.net](https://digitest.net).  
 Inspired by open web standards and Joomla community best practices.
 
 ## 🔗 Useful Links
