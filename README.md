@@ -1,6 +1,3 @@
-Here's a polished, professional README.md in English for your Joomla 5 Counter Module, following GitHub's best practices while retaining your original structure:
-
-```markdown
 # Joomla 5 Animated Counter Module
 
 ![Joomla 5 Supported](https://img.shields.io/badge/Joomla-5.x-%234F9F4A?logo=joomla)
