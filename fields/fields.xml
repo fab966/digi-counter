@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <field
+        name="number"
+        type="text"
+        default=""
+        label="Numero elemento"
+        description="Il numero che deve essere raggiunto da questo elemento"
+    />
+    
+    <field
+        name="label"
+        type="text"
+        default=""
+        label="Etichetta elemento"
+        description="Il testo che appare sotto al numero"
+    />
+       
+    <field
+        name="plus"
+        type="checkbox"
+        label="Segno +"
+        description="Se deve apparire un + dopo il numero"
+        value="0"
+    />
+    <field name="suffix" 
+        type="radio" 
+        default="0" 
+        label="Suffisso" 
+        description="Se richiesto, aggiunge un suffisso K, M o pecentuale">
+        <option value="0">None</option>
+        <option value="k">K</option>
+        <option value="m">M</option>
+        <option value="c">%</option>
+	</field>
+</form>

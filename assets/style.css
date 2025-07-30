@@ -1,0 +1,84 @@
+/* CSS for Digi Counter Module */
+
+/* Base style */
+
+div.digi-counter h3,
+div.digi-counter h4 {
+	text-align: center !important;
+	margin: 0 0 0 0;
+	
+}
+
+
+.counters-container {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	margin: 2rem 0;
+	
+	justify-content: space-around;
+}
+
+.counter-column {
+	text-align: center;
+	padding: 16px 1% 20px;
+	box-sizing: border-box;
+	
+/*	background-color: #ddd;*/
+	border-radius: 16px;
+	
+/*	border: 1px solid #F00; /* test */
+}
+
+.counter-column.cols-5 {
+	width: 18%;
+	margin: 12px 1%;
+}
+
+.counter-column.cols-4 {
+	width: 23%;
+	margin: 12px 1%;
+}
+
+.counter-column.cols-3 {
+	width: 31%;
+	margin: 12px 1%;
+}
+
+.counter {
+/*	font-size: 3rem;*/
+	font-weight: bold;
+/*	color: #333;*/
+	margin-bottom: 0.5rem;
+	transition: color 0.3s ease;
+	
+	line-height: 1.2;
+}
+
+.counter-label {
+	font-size: 1rem;
+	color: #666;
+}
+
+/* Breakpoints */
+@media (max-width: 768px) {
+	.counter-column.cols-5 {
+		width: 42%;
+	}
+	.counter-column.cols-4 {
+		width: 46%;
+	}
+}
+
+@media (max-width: 690px) {
+	.counter-column.cols-3 {
+		width: 96%;
+	}
+}
+
+@media (max-width: 480px) {
+	.counter-column.cols-5,
+	.counter-column.cols-4 {
+		width: 96%;
+	}
+}

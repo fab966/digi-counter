@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="4" client="site" method="upgrade">
+	<name>Digi Counter</name>
+	<author>Fabrizio Galuppi - Digitest</author>
+	<creationDate>Apr 2025</creationDate>
+	<copyright>Copyright (C) 2025 - 2030 Fabrizio Galuppi - Digitest</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>public2@digitest.net</authorEmail>
+	<authorUrl>www.digitest.net</authorUrl>
+	<version>1.0.5</version>
+	<description><![CDATA[
+ 		<p style="float:right"><img src="/modules/mod_digi_counter/assets/app_ico_120.jpg" /></p>
+		<p><b>Modulo per Counters animati</b></p>
+		<p>Si possono mostrare da 3 a 5 colonne (items), la struttura CSS è preimpostata.<br>Ulteriori personalizzazioni e customizzazioni si possono integrare nel file CSS del Template, in quello del Modulo o, per correzioni minimali, anche nel campo previsto per regole CSS in Customizza.</p>
+		<br style="clear:both" />
+	]]>
+	</description>
+	<files>
+		<filename module="mod_digi_counter">mod_digi_counter.php</filename>
+		<filename>mod_digi_counter.xml</filename>
+		<filename>index.html</filename>
+		<folder>assets</folder>
+		<folder>fields</folder>
+		<folder>tmpl</folder>
+	</files>
+	<languages>
+	</languages>	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+      			<field type="note" name="note0" class="" label="Impostazioni"/>
+       			<field
+        			name="title"
+        			type="text"
+        			default=""
+        			label="Titolo"
+        			filter="safehtml"
+       				description="Il titolo del Modulo H3 (lasciare vuoto per non mostrare)"
+       			/>
+       			<field
+        			name="subtitle" 
+        			type="text" 
+        			default="" 
+        			label="Sotto Titolo"
+        			filter="safehtml"
+       				description="Il sotto-titolo del Modulo H4 (lasciare vuoto per non mostrare)"
+       			/>
+       			<field
+        			name="duration" 
+        			type="text" 
+        			default="2000" 
+        			label="Durata animazione" 
+       				description="Il tempo di durata in millisecondi dell'animazione"
+       			/>
+       			<field type="spacer" name="line1" hr="true" />
+       			<field type="note" name="note1" class="" label="Counters"/>
+				<field 
+				    name="element"
+				    type="subform"
+				    formsource="/modules/mod_digi_counter/fields/fields.xml"
+				    multiple="true"
+				    min="3"
+				    max="5"
+				    label="Elementi"
+				    description="Gli elementi da mostrare nel Modulo"
+				/>
+			</fieldset>
+			
+			<fieldset name="MOD_DIGI_COUNTER_CUSTOMISE">
+				<field name="numColor"
+       				type="color" 
+       				default="rgba(100, 100, 100, 1)" 
+        			format="rgba"
+        			label="Colore Numero"
+        			description="Il colore del numero"
+				/>
+	    
+	    		<field name="numSize" 
+        			type="text" 
+        			default="3rem" 
+        			label="Font Size Numero" 
+       				description="Grandezza Font del numero (CON UNITA', es: px, rem, ecc...)"
+       			/>
+       			
+       			<field name="labelColor"
+       				type="color" 
+       				default="rgba(55, 55, 55, 1)" 
+        			format="rgba"
+        			label="Colore Etichetta"
+        			description="Il colore dell'etichetta"
+				/>
+	    
+	    		<field name="labelSize" 
+        			type="text" 
+        			default="1rem" 
+        			label="Font Size Etichetta" 
+       				description="Grandezza Font dell'etichetta (CON UNITA', es: px, rem, ecc...)"
+       			/>
+				<field name="titleColor"
+       				type="color" 
+       				default="rgba(50, 150, 227, 1)" 
+        			format="rgba"
+        			label="Colore Titolo"
+        			description="Il colore del titolo"
+				/>
+	    
+	    		<field name="titleSize" 
+        			type="text" 
+        			default="3rem" 
+        			label="Font Size Titolo" 
+       				description="Grandezza Font del titolo (CON UNITA', es: px, rem, ecc...)"
+       			/>
+       			
+				<field name="subTitleColor"
+       				type="color" 
+       				default="rgba(22, 138, 132, 1)" 
+        			format="rgba"
+        			label="Colore Sotto Titolo"
+        			description="Il colore del sotto titolo"
+				/>
+				
+				<field name="bkgColor"
+       				type="color" 
+       				default="rgba(220, 220, 220, 1)" 
+        			format="rgba"
+        			label="Sfondo"
+        			description="Colore di sfondo delle celle contenitore"
+				/>
+	    
+	    		<field name="subTitleSize" 
+        			type="text" 
+        			default="2rem" 
+        			label="Font Size Sotto Titolo" 
+       				description="Grandezza Font del sotto titolo (CON UNITA', es: px, rem, ecc...)"
+       			/>
+		    
+			    <field name="customCSS"
+				    type="textarea"
+				    default=""
+				    label="Custom CSS"
+				    description=""
+				    rows="10"
+				    cols="12"
+				    filter="raw"
+				/>
+			</fieldset>
+				
+			<fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC"
+				/>
+
+				<field
+					name="moduleclass_sfx"
+					type="textarea"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"
+					default=""
+					rows="3"
+				/>
+				
+				<field
+ 					name="useintcss"
+ 					type="radio"
+ 					default="1"
+ 					class="btn-group btn-group-yesno"
+ 					label="Usa CSS Modulo"
+ 					description="Seleziona se usare il CSS interno o le regole scritte nel CSS del Template (se disponibili)">
+  					<option value="0">JNO</option>
+  					<option value="1">JYES</option>
+				</field>
+
+				<field
+					name="owncache"
+					type="list"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC"
+					default="1"
+					filter="integer"
+					>
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="number"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC"
+					default="900"
+					filter="integer"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+	<updateservers>
+		<server type="extension" name="mod_digi_counter">https://www.digitest.net/sw/updates/mod_digi_counter.xml</server>
+	</updateservers>
+</extension>
+
+
+
+
+
