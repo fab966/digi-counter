@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <field
+        name="number"
+        type="text"
+        default=""
+        label="MOD_DIGI_COUNTER_FIELD_NUMBER_LABEL"
+        description="MOD_DIGI_COUNTER_FIELD_NUMBER_DESC"
+    />
+    <field
+        name="label"
+        type="text"
+        default=""
+        label="MOD_DIGI_COUNTER_FIELD_LABEL_LABEL"
+        description="MOD_DIGI_COUNTER_FIELD_LABEL_DESC"
+    />
+    <field
+        name="plus"
+        type="checkbox"
+        label="MOD_DIGI_COUNTER_FIELD_PLUS_LABEL"
+        description="MOD_DIGI_COUNTER_FIELD_PLUS_DESC"
+        value="0"
+    />
+    <field
+        name="suffix"
+        type="radio"
+        default="0"
+        label="MOD_DIGI_COUNTER_FIELD_SUFFIX_LABEL"
+        description="MOD_DIGI_COUNTER_FIELD_SUFFIX_DESC">
+        <option value="0">None</option>
+        <option value="k">K</option>
+        <option value="m">M</option>
+        <option value="c">%</option>
+    </field>
+</form>
