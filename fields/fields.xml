@@ -4,33 +4,32 @@
         name="number"
         type="text"
         default=""
-        label="Numero elemento"
-        description="Il numero che deve essere raggiunto da questo elemento"
+        label="MOD_DIGI_COUNTER_FIELD_NUMBER_LABEL"
+        description="MOD_DIGI_COUNTER_FIELD_NUMBER_DESC"
     />
-    
     <field
         name="label"
         type="text"
         default=""
-        label="Etichetta elemento"
-        description="Il testo che appare sotto al numero"
+        label="MOD_DIGI_COUNTER_FIELD_LABEL_LABEL"
+        description="MOD_DIGI_COUNTER_FIELD_LABEL_DESC"
     />
-       
     <field
         name="plus"
         type="checkbox"
-        label="Segno +"
-        description="Se deve apparire un + dopo il numero"
+        label="MOD_DIGI_COUNTER_FIELD_PLUS_LABEL"
+        description="MOD_DIGI_COUNTER_FIELD_PLUS_DESC"
         value="0"
     />
-    <field name="suffix" 
-        type="radio" 
-        default="0" 
-        label="Suffisso" 
-        description="Se richiesto, aggiunge un suffisso K, M o pecentuale">
+    <field
+        name="suffix"
+        type="radio"
+        default="0"
+        label="MOD_DIGI_COUNTER_FIELD_SUFFIX_LABEL"
+        description="MOD_DIGI_COUNTER_FIELD_SUFFIX_DESC">
         <option value="0">None</option>
         <option value="k">K</option>
         <option value="m">M</option>
         <option value="c">%</option>
-	</field>
+    </field>
 </form>

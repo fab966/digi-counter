@@ -1,6 +1,6 @@
-# Joomla 5 Animated Counter Module
+# Joomla 6 Animated Counter Module
 
-![Joomla 5 Supported](https://img.shields.io/badge/Joomla-5.x-%234F9F4A?logo=joomla)
+![Joomla 6 Supported](https://img.shields.io/badge/Joomla-6.x-%234F9F4A?logo=joomla)
 ![GPL License](https://img.shields.io/badge/license-GPL%20v2%2B-blue)
 ![Static Badge](https://img.shields.io/badge/version-alpha-orange)
 
@@ -84,8 +84,8 @@ document.addEventListener('counterAnimationEnd', (e) => {
 ## 🛠 Development
 
 ### Requirements
-- Joomla 5.x
-- PHP 8.0+
+- Joomla 6.x
+- PHP 8.3+
 - Browser with JavaScript support
 
 ### Building from Source
