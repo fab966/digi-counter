@@ -2,7 +2,7 @@
 
 ![Joomla 6 Supported](https://img.shields.io/badge/Joomla-6.x-%234F9F4A?logo=joomla)
 ![GPL License](https://img.shields.io/badge/license-GPL%20v2%2B-blue)
-![Static Badge](https://img.shields.io/badge/version-alpha-orange)
+![Static Badge](https://img.shields.io/badge/version-stable-success)
 
 A dynamic counter module for Joomla 5 that displays animated statistics with customizable formatting.
 
