@@ -6,8 +6,8 @@
  * @subpackage  Modules
  * @license     GNU/GPL, see LICENSE.php
  * @author      Fabrizio Galuppi - Digitest
- * @version     2.0.1
- * @date        Mar 2026
+ * @version     2.0.2
+ * @date        Ott 2026
  * @copyright   Copyright (C) 2026 - 2030 Fabrizio Galuppi - Digitest
  * @link        https://www.digitest.net
  */
@@ -82,6 +82,8 @@ $script = <<<JS
             return (value / 1000).toFixed(1).replace('.0', '') + 'K';
         } else if (suffix === 'm' && value >= 1000000) {
             return (value / 1000000).toFixed(1).replace('.0', '') + 'M';
+        } else if (suffix === 'mld') {
+            return (value).toFixed(1).replace('.0', '') + 'MLD';
         } else if (suffix === 'c') {
             return value + '%';
         }

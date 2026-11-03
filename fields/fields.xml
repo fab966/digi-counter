@@ -30,6 +30,7 @@
         <option value="0">None</option>
         <option value="k">K</option>
         <option value="m">M</option>
+        <option value="mld">MLD</option>
         <option value="c">%</option>
     </field>
 </form>
